@@ -1,0 +1,30 @@
+input[name='open'],input[name='reg']{
+    height: 78px;
+    width: 313px;
+    border-radius: 100px;
+    display: block;
+    background-color: rgb(172, 231, 24);
+    
+}
+
+form[name = 'signup']{
+    margin: 0 200px;
+
+}
+p[data-text]{
+    color:grey;
+    
+}
+h1{
+    color: rgb(172, 231, 24);
+}
+input[type="text"]{
+    border-radius: 100px;
+    height: 60px;
+    width: 594px;
+}
+input[type="password"]{
+    border-radius: 100px;
+    height: 60px;
+    width: 594px;
+}

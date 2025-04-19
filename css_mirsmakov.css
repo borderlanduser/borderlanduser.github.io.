@@ -1,0 +1,16 @@
+.box  {
+    
+    display: flex;
+    justify-content: space-around;
+}
+.mobile {
+    width: 1400px;
+    height: 326px;
+    background: rgb(172, 231, 24);
+    
+    
+}
+h1{
+    color: rgb(172, 231, 24);
+    
+}

@@ -1,0 +1,556 @@
+    @font-face {
+      font-family: dela;
+      font-weight: normal;
+      font-style: normal;
+      src: url(DelaGothicOne-Regular.ttf);
+    }
+    @font-face {
+      font-family: anton;
+      font-weight: normal;
+      font-style: normal;
+      src: url(Anton/Anton-Regular.ttf);
+    }
+    @font-face {
+      font-family: kulim;
+      font-weight: normal;
+      font-style: normal;
+      src: url(Kulim_Park/KulimPark-Regular.ttf);
+    }
+    @font-face {
+      font-family: cuprum;
+      font-weight: normal;
+      font-style: normal;
+      src: url(Cuprum/Cuprum-VariableFont_wght.ttf);
+    }
+    @font-face {
+      font-family: lato;
+      font-weight: normal;
+      font-style: normal;
+      src: url(Lato/Lato-Regular.ttf);
+    }
+    @font-face {
+      font-family: latob;
+      font-weight: normal;
+      font-style: normal;
+      src: url(Lato/Lato-Bold.ttf);
+    }
+    @font-face {
+      font-family: unbounded;
+      font-weight: normal;
+      font-style: normal;
+      src: url(Unbounded/Unbounded-VariableFont_wght.ttf);
+    }
+    @font-face {
+      font-family: kurale;
+      font-weight: normal;
+      font-style: normal;
+      src: url(Kurale/Kurale-Regular.ttf);
+    }
+    /* Общие стили */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "dela","lato","kurale","unbounded","dela","cuprum","anton","kulim";
+      width: 100%;
+      color: #333;
+      
+      
+    }
+    header{
+      width: 100%;
+    }
+
+    a {
+      
+      color: black;
+      
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .logo {
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    /* Шапка */
+    .text-center {
+      text-align: center;
+      font-family: dela;
+      font-size: 40px;
+      color:rgb(172, 231, 24)
+     
+    }
+    .text2{
+      text-align: center;
+      font-size: 24px;
+      font-family: cuprum;
+      
+      
+    }
+  
+    header .icon{
+      /* Auto layout */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 40px;
+
+      position: absolute;
+      width: 261px;
+      height: 28px;
+      right: 0px;
+      top: 55px;
+    }
+    header .icon img{
+      width: 28px;
+      height: 28px;
+      
+      cursor: pointer;
+      
+
+    }
+    
+
+
+    nav {
+      display: flex;
+      gap: 1px;
+      justify-content: space-around;
+      max-width: 1212;
+      margin: 0 auto;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 24px;
+      display: flex;
+      justify-content: space-around;
+      font-family: kurale;
+      
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Секция героя */
+    .hero {
+      background-image: url("main_pag.png") ;
+      
+
+      background-position: center;
+
+      background-size: cover;
+
+      height: 620px;
+
+      width: 100%;
+      color: white;
+    
+      padding: 60px 20px;
+    
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      
+      padding: 70px;
+      font-family: dela;
+      text-align: right;
+      
+    }
+
+    .bottom{
+      text-align: right;
+      padding: 2px 300px;
+    }
+    .bottom button{
+      padding: 10px 20px;
+      font-size: 32px;
+      border: none;
+      height: 78px;
+      width: 413px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      font-family: dela;
+    }
+    .bottom button:hover {
+      background-color: black;
+    }
+    .header {
+      text-align: center; /* Центрирование текста */
+      margin: 20px 0; /* Отступы сверху и снизу */
+      font-size: 24px; /* Размер шрифта заголовка */
+      font-weight: bold; /* Жирный шрифт */
+      padding: 20px;
+    }
+    .heade{
+      font-size: 32px;
+      text-align: center;
+      font-family: dela;
+      color: black;
+      padding: 20px;
+        
+      }
+    .gallery {
+      display: flex;
+      justify-content: flex-start;;
+      max-width: 1200px;
+      margin: 20px auto;
+      flex-wrap: wrap;
+      gap: 30px
+    }
+      
+      
+    .item {
+          position: relative;
+          width: 23%; /* Ширина каждого элемента */
+          margin-bottom: 20px;
+          background-color: white;
+          border-radius: 100%;
+    }
+      
+    .item img {
+          width: 100%;
+          border-radius: 30%; /* Скругление верхних углов */
+      }
+      
+    .icon {
+          position: absolute;
+          font-size: 28px; /* Размер иконок */
+      }
+    .icon img {
+        width: 45px; /* Задайте нужную ширину */
+        height: auto; /* Автоматическая высота для сохранения пропорций */
+    }
+    
+    .top-right {
+          top: 255px;
+          right: -4px;
+      }
+    .info {
+        display: flex; /* Используем flexbox для расположения заголовка и цены */
+        flex-direction: column; /* Вертикальное расположение заголовка и цены */
+        align-items: flex-end; /* Выравнивание по правому краю */
+    }
+      
+      
+    .price2 {
+          font-size: 20px;
+          color: #333;
+          padding: 10px;
+          font-family: kurale;
+      }
+      
+    .title {
+          font-size: 20px;
+          color: #333;
+          padding-left: 10px;
+          font-family: kurale;
+      }
+    .price {
+        font-size:20px ;
+        font-family: dela;
+      }
+    
+    .card_act {
+      padding-top: 40px;
+      padding-left: 20px;
+      width: 100%;
+      display: block;
+    }
+
+    .card_act h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+      
+    }
+  
+
+    .offer-grid2 {
+      display: flex;
+      max-width: 1263px;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+      gap: 40px;
+    }
+    
+    .act2 .left{
+      font-size: 32px;
+      color:black;
+      padding: 17px;
+      
+      
+    }
+    .act2 .right{
+      padding: 50px 2px;
+      text-align: right;
+      font-size: 40px;
+      color:black;
+    }
+
+    .act1 {
+      background: url(5.png);
+      width: 640px;
+      height: 273px;
+      object-fit: cover;
+      border-radius: 35px;
+      font-family: dela;
+      background-position: center;
+      background-size: cover;
+      
+     
+    }
+    .act2 {
+      background: url(6.png);
+      width: 640px;
+      height: 273px;
+      object-fit: cover;
+      border-radius: 35px;
+      background-size: no-repeat;
+      font-family: dela;
+      background-position: center;
+
+      background-size: cover;
+      
+     
+    }
+    .containerinfo {
+      display: flex;
+      background-color: white;
+      border-radius: 8px;
+      justify-content: center;
+      overflow: hidden;
+      padding-top: 40px;
+      margin: 0 auto; /* Центрирование контейнера */
+      width: 100%; /* Задайте нужную ширину (например, 80% от родительского элемента) */
+      max-width: 1300px; /* Максимальная ширина для больших экранов */
+      
+    }
+  
+    .left-section {
+      flex: 0.9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      background-color: white;
+      
+      
+    }
+    .left-section h2{
+      font-size: 24px;
+      font-family: dela;
+    }
+    
+    .right-section {
+        flex: 1.2;
+        padding: 20px;
+        font-size: 24px;
+        font-family: kurale;
+    }
+    .bold{
+      font-family: dela;
+      font-size: 24px;
+    }
+    .info-text{
+      padding-top: 10px;
+    }
+    
+    
+    .number {
+        
+        font-size: 64px;
+        margin-right: 10px;
+        color: rgb(172, 231, 24);
+        font-family: dela;
+    }
+    
+    .greenqr {
+      background-color: rgb(172, 231, 24);
+      width: 100%;
+      height: auto; /* Изменено на auto для адаптивности */
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Равномерное распределение пространства */
+      padding: 20px 110px;
+      color: black;
+      margin-top: 20px;
+  }
+  
+  .main {
+      margin-right: 20px;
+      display: flex; /* Flex для расположения элементов */
+      flex-direction: column; /* Устанавливаем вертикальную ориентацию */
+  }
+  
+  .main h5 {
+      font-size: 36px;
+      font-family: dela;
+      color: black;
+      margin-top: 0; 
+  }
+  
+  .greenqr p {
+      font-size: 24px;
+      font-family: kurale;
+      padding: 0;
+      
+  }
+  
+  
+  .qrcode {
+      display: flex; /* Flex для размещения QR-кода и изображений приложения */
+      flex-direction: column; /* Устанавливаем вертикальную ориентацию */
+      align-items: center; /* Центруем элементы по горизонтали */
+      margin-right: 100px;
+    }
+  
+  
+  .imageapp {
+    display: flex; /* Flex для горизонтального расположения изображений */
+    margin-top: 1px; /* Отступ сверху для разделения */
+    max-width: 600px;
+    }
+
+  .imageapp img {
+      margin-right: 10px; /* Отступ между изображениями */
+      margin-left: 10px; /* Отступ слева для первого изображения */
+      border-radius: 30px;
+      width: 100%; /* Сделано адаптивным */
+      max-width: 230px; /* Максимальная ширина для изображений */
+      height: auto; /* Соотношение сторон */
+  }
+
+  /* Добавляем отступ справа для последнего изображения */
+  .imageapp img:last-child {
+      margin-right: 0; /* Убираем отступ справа у последнего изображения */
+  }
+  .footer {
+      display: flex;
+      flex-direction: column; /* Вертикальное расположение элементов */
+      padding: 10px 10px;
+      height: 461px;
+      background-color: black; /* Цвет фона футера */
+  }
+
+  .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+      color: white;
+      padding: 10px 60px;
+    }
+  .footer h4{
+    font-family: dela;
+    font-size: 16px;
+  }
+
+  .footer-left {
+      display: flex;
+      flex-direction: column;
+  }
+  footer p {
+    margin: 0; /* Убираем стандартные отступы */
+    padding: 5px 0;
+    }
+
+    footer p:nth-child(1) {
+        margin-top: 10px; /* Отступ для первого элемента */
+        
+    }
+
+    footer p:nth-child(2) {
+        margin-top: 100px; /* Отступ для второго элемента */
+        font-family: kurale;
+    }
+
+    footer p:nth-child(3) {
+        margin-top: 40px; /* Отступ для третьего элемента (можно убрать или задать другой) */
+        
+      }
+
+
+  .icons {
+    display: flex;
+    text-align: left;
+      
+  }
+
+  .icon {
+      width: 95px; /* Ширина иконок */
+      height: 46px; /* Высота иконок */
+      /* Отступ между иконками */
+  }
+
+  .footer-section {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px; /* Отступ между блоками */
+      margin-top: 20px;
+      
+  }
+
+  .links {
+      display: flex;
+      flex-direction: column; /* Убедитесь, что ссылки располагаются вертикально */
+      margin-top: 20px;
+    }
+
+  .links a {
+      text-decoration: none; /* Убираем подчеркивание у ссылок */
+      color: white; /* Цвет ссылок */
+      margin-bottom: 30px; /* Отступ между ссылками */
+      font-family: lato;
+      font-size: 16px;
+  }
+
+  /* Стили для блока подписки */
+  .newsletter {
+      margin-top: 30px; /* Отступ сверху для блока подписки */
+      text-align: right; /* Центрирование текста в блоке подписки */
+      padding: 0 40px;
+    }
+  .newsletter p{
+    font-family: lato;
+    font-size: 24px;
+    color:white;
+  }
+
+  .email-input {
+      padding: 10px;
+      margin-top: 10px; /* Отступ сверху */
+      width: 285px;
+      color: black;
+  }
+
+  .subscribe-button {
+      padding: 10px 60px;
+      margin-top: 10px; /* Отступ сверху */
+      background-color: white; /* Цвет кнопки */
+      color: black; /* Цвет текста кнопки */
+      border: none; /* Убираем рамку */
+      cursor: pointer; /* Указатель при наведении */
+      width: 214px;
+  }
+  .subscribe-button:hover{
+    font-family: lato;
+    font-size: 16px;
+  }
+    
+    
+    
